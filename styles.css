@@ -1,0 +1,65 @@
+:root {
+    --background-font: 'DM Mono', monospace;
+    --main-font: 'Inter', sans-serif;
+    --white-color: whitesmoke;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    margin: 40px 50px;
+    border: 1px solid black;
+    height: 800px;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+}
+
+/* --------------------------- Left Side --------------------------- */
+
+.background-container {
+    flex: 1;
+
+    background-image: url(images/background.jpg);
+    background-size: cover;
+
+    color: var(--white-color);
+    font-size: 32px;
+    font-family: var(--background-font);
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.title-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 15%;
+    right: 0;
+    left: 0;
+}
+
+#logo {
+    height: 3rem;
+}
+
+.watermark {
+    font-size: 0.3em;
+}
+
+/* --------------------------- Right Side --------------------------- */
+
+.content-container {
+    border: 1px solid black;
+    flex: 2;
+}
